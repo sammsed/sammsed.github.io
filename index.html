@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Treat and Eat</title>
+</head>
+
+<style>
+* {box-sizing: border-box;}
+
+header {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 40px;
+    line-height: 20px;
+}
+
+.tablink {
+  background-color:#2F4B33;
+  color: white;
+  float: left;
+  border: none;
+  display: block;
+  outline: none;
+  cursor: pointer;
+  padding: 50px 40px;
+  font-size: 17px;
+  width: 100%;
+  font: bolder;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  overflow: hidden;
+}
+
+.tablink:hover {
+  background-color: #ddbd1b;
+}
+
+@media screen and (max-width: 600px) {
+  .tablink a, .tablink input[type=text] {
+    float: none;
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 14px;
+  }
+  
+  .tablink input[type=text] {
+    border: 1px solid #ccc;  
+  }
+}
+
+.topnav input[type=text] {
+  float: right;
+  padding: 6px;
+  margin-top: 8px;
+  margin-right: 16px;
+  border: none;
+  font-size: 17px;
+}
+
+.tabcontent {
+  color: black;
+  padding: 100px 20px;
+  height: 100%;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color:#2F4B33;
+;
+   color: white;
+   text-align: center;
+   font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+
+#Home {}
+#Booking {}
+
+
+</style>
+
+<header>
+  <input type="text" placeholder="Search..">
+  <button class="tablink" onclick="openPage('Home', this, 'rgb(10, 101, 10)')" id="defaultOpen">Home </button>
+  <button class="tablink" onclick="openPage('Travel', this, 'rgb(10, 101, 10)')">Travel</button>
+  <button class="tablink" onclick="openPage('Food', this, 'rgb(10, 101, 10)')">Food</button>
+  <button class="tablink" onclick="openPage('Contact', this, 'rgb(10, 101, 10)')">Contact</button>
+
+
+</header>
+
+<body>
+    <div id='Home' class="tabcontent">
+        <p>Home page content here</p>
+
+    </div>
+
+    <section>
+        <div id="Travel" class="tabcontent">
+            <p>Travel Page content here</p>
+    </section>
+
+    <section>
+        <div id="Food" class="tabcontent">
+            <p>Food Page content here</p>
+    </section>
+
+    <section>
+        <div id="Contact" class="tabcontent">
+            <p>Contact Page content here</p>
+    </section>
+
+    
+
+<div class="footer">
+    <p>Treat&Eat</p>
+</div>
+
+</body>
+
+<script>
+    function openPage(pageName,elmnt,color) {
+      var i, tabcontent, tablinks;
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tablink");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].style.backgroundColor = "";
+      }
+      document.getElementById(pageName).style.display = "block";
+      elmnt.style.backgroundColor = color;
+    }
+    document.getElementById("defaultOpen").click();
+    </script>
+
+
+</html>
