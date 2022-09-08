@@ -22,18 +22,20 @@ header {
 
 .tablink {
   background-color:#2F4B33;
-  color: white;
-  float: left;
+  right: auto;
+  color: #f5d9de;
+  float: none;
   border: none;
   display: block;
   outline: none;
   cursor: pointer;
   padding: 50px 40px;
   font-size: 17px;
-  width: 100%;
+  width: 10%;
   font: bolder;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   overflow: hidden;
+  bottom: 150px;
 }
 
 .tablink:hover {
@@ -47,11 +49,12 @@ header {
     text-align: left;
     width: 100%;
     margin: 0;
-    padding: 14px;
+    padding: 100px;
   }
-  
+}
+
   .tablink input[type=text] {
-    border: 1px solid #ccc;  
+    border: 1px solid #ccc;
   }
 }
 
@@ -83,44 +86,79 @@ header {
    font-family: Verdana, Geneva, Tahoma, sans-serif
 }
 
-#Home {}
-#Booking {}
+#Home {
+  background-image: url(homepage.png);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#Travel {
+  background-color: #E7E9E5;
+}
+
+#Food {
+  background-color: #E7E9E5;
+}
+
+#Contact {
+  background-color: #E7E9E5;
+}
+
 
 
 </style>
 
 <header>
-  <input type="text" placeholder="Search..">
-  <button class="tablink" onclick="openPage('Home', this, 'rgb(10, 101, 10)')" id="defaultOpen">Home </button>
-  <button class="tablink" onclick="openPage('Travel', this, 'rgb(10, 101, 10)')">Travel</button>
-  <button class="tablink" onclick="openPage('Food', this, 'rgb(10, 101, 10)')">Food</button>
-  <button class="tablink" onclick="openPage('Contact', this, 'rgb(10, 101, 10)')">Contact</button>
 
+  <img src="logo_t&e.png" alt="logo" width="100" height="100">
+  <h1>Trip & Eat</h1>
+  <p>Travel and Food site</p>
+  <input type="text" placeholder="Search..">
+
+    <button class="tablink" onclick="openPage('Home', this, 'rgb(10, 101, 10)')" id="defaultOpen">Home </button>
+    <button class="tablink" onclick="openPage('Travel', this, 'rgb(10, 101, 10)')">Travel</button>
+    <button class="tablink" onclick="openPage('Food', this, 'rgb(10, 101, 10)')">Food</button>
+    <button class="tablink" onclick="openPage('Contact', this, 'rgb(10, 101, 10)')">Contact</button>
 
 </header>
 
 <body>
+  <!-- Home Tab -->
     <div id='Home' class="tabcontent">
         <p>Home page content here</p>
+        <br><br><br><br><br><br><br><br><br><br><br><br>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <br><br><br><br><br><br>
+
+
+        </b>
 
     </div>
 
+
+<!-- Travel Tab -->
     <section>
         <div id="Travel" class="tabcontent">
             <p>Travel Page content here</p>
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
     </section>
 
     <section>
         <div id="Food" class="tabcontent">
             <p>Food Page content here</p>
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
     </section>
 
     <section>
         <div id="Contact" class="tabcontent">
             <p>Contact Page content here</p>
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
     </section>
 
-    
+
 
 <div class="footer">
     <p>Treat&Eat</p>
