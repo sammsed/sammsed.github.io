@@ -18,11 +18,12 @@ header {
     right: 0;
     height: 40px;
     line-height: 20px;
+    color: #f5d9de;
 }
 
 .tablink {
   background-color:#2F4B33;
-  color: white;
+  color: #f5d9de;
   float: left;
   border: none;
   display: block;
@@ -49,9 +50,9 @@ header {
     margin: 0;
     padding: 14px;
   }
-  
+
   .tablink input[type=text] {
-    border: 1px solid #ccc;  
+    border: 1px solid #ccc;
   }
 }
 
@@ -77,19 +78,36 @@ header {
    bottom: 0;
    width: 100%;
    background-color:#2F4B33;
-;
-   color: white;
+   color: #f5d9de;
    text-align: center;
    font-family: Verdana, Geneva, Tahoma, sans-serif
 }
 
-#Home {}
-#Booking {}
+#Home {
+  background-image: url(homepage.png);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
+#Travel {
+  background-color: #E7E9E5;
+}
+
+#Food {
+  background-color: #E7E9E5;
+}
+
+#Contact {
+  background-color: #E7E9E5;
+}
 
 </style>
 
 <header>
+  <img src="logo_t&e.png" alt="logo" width="100" height="100">
+  <h1>Trip & Eat</h1>
+  <p>Travel and Food site</p>
   <input type="text" placeholder="Search..">
   <button class="tablink" onclick="openPage('Home', this, 'rgb(10, 101, 10)')" id="defaultOpen">Home </button>
   <button class="tablink" onclick="openPage('Travel', this, 'rgb(10, 101, 10)')">Travel</button>
@@ -102,25 +120,40 @@ header {
 <body>
     <div id='Home' class="tabcontent">
         <p>Home page content here</p>
+        <br><br><br><br><br><br><br><br><br><br><br><br>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <br><br><br><br><br><br>
 
     </div>
 
     <section>
         <div id="Travel" class="tabcontent">
             <p>Travel Page content here</p>
+            <br><br><br><br><br><br><br><br><br><br><br><br>
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            <br><br><br><br><br><br>
+
     </section>
 
     <section>
         <div id="Food" class="tabcontent">
             <p>Food Page content here</p>
+            <br><br><br><br><br><br><br><br><br><br><br><br>
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            <br><br><br><br><br><br>
+
     </section>
 
     <section>
         <div id="Contact" class="tabcontent">
             <p>Contact Page content here</p>
+            <br><br><br><br><br><br><br><br><br><br><br><br>
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            <br><br><br><br><br><br>
+
     </section>
 
-    
+
 
 <div class="footer">
     <p>Treat&Eat</p>
