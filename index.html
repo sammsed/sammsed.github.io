@@ -4,72 +4,82 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Treat and Eat</title>
+    <title>Trip&Eat</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <style>
-* {box-sizing: border-box;}
-
-header {
-    display: flex;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 40px;
-    line-height: 20px;
-    color: #f5d9de;
+.tablink-right {
+  float: right;
+  color: #F5D9DE;
 }
 
 .tablink {
-  background-color:#2F4B33;
-  color: #f5d9de;
-  float: left;
+  overflow: hidden;
+  background-color: #2F4B33;
+  font-family: 'PT Sans Caption', sans-serif;
+  float: none;
   border: none;
   display: block;
   outline: none;
   cursor: pointer;
-  padding: 50px 40px;
   font-size: 17px;
-  width: 100%;
   font: bolder;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  overflow: hidden;
+  color: #F5D9DE;
 }
 
-.tablink:hover {
-  background-color: #ddbd1b;
-}
-
-@media screen and (max-width: 600px) {
-  .tablink a, .tablink input[type=text] {
-    float: none;
-    display: block;
-    text-align: left;
-    width: 100%;
-    margin: 0;
-    padding: 14px;
-  }
-
-  .tablink input[type=text] {
-    border: 1px solid #ccc;
-  }
-}
-
-.topnav input[type=text] {
-  float: right;
-  padding: 6px;
-  margin-top: 8px;
-  margin-right: 16px;
-  border: none;
+.tablink a {
+  float: left;
+  color: #f2f2f2;
+  padding: 10px 10px;
+  text-decoration: none;
   font-size: 17px;
+  color: #F5D9DE;
 }
 
-.tabcontent {
-  color: black;
-  padding: 100px 20px;
-  height: 100%;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+* {
+  box-sizing: border-box;
+}
+
+form.search input[type=text] {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: left;
+  width: 80%;
+  background: #f1f1f1;
+  font-size: 'PT Sans Caption', sans-serif;
+}
+
+form.search button {
+  float: left;
+  width: 20%;
+  padding: 10px;
+  background: #2F4B33;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none;
+  cursor: pointer;
+}
+
+form.search button:hover {
+  background: green;
+}
+
+form.search::after {
+  content: "";
+  clear: none;
+  display: table;
+}
+
+body {
+  margin: 0;
+  font-family: 'PT Sans Caption', sans-serif;
 }
 
 .footer {
@@ -78,105 +88,63 @@ header {
    bottom: 0;
    width: 100%;
    background-color:#2F4B33;
-   color: #f5d9de;
+   color: white;
    text-align: center;
-   font-family: Verdana, Geneva, Tahoma, sans-serif
+   font-family: 'PT Sans Caption', sans-serif;
 }
 
-#Home {
-  background-image: url(homepage.png);
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-size: cover;
+body{
+    background-image: url(homepage.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-#Travel {
-  background-color: #E7E9E5;
-}
-
-#Food {
-  background-color: #E7E9E5;
-}
-
-#Contact {
-  background-color: #E7E9E5;
+.News{
+  width: 500px;
+  padding: 10px;
+  border: 5px solid #556B2F;
+  margin: 0;
+  object-fit: contain;
+  display: block;
+  background-color: #556B2F; 
+  color: white;
+  float: left;
 }
 
 </style>
-
-<header>
-  <img src="logo_t&e.png" alt="logo" width="100" height="100">
-  <h1>Trip & Eat</h1>
-  <p>Travel and Food site</p>
-  <input type="text" placeholder="Search..">
-  <button class="tablink" onclick="openPage('Home', this, 'rgb(10, 101, 10)')" id="defaultOpen">Home </button>
-  <button class="tablink" onclick="openPage('Travel', this, 'rgb(10, 101, 10)')">Travel</button>
-  <button class="tablink" onclick="openPage('Food', this, 'rgb(10, 101, 10)')">Food</button>
-  <button class="tablink" onclick="openPage('Contact', this, 'rgb(10, 101, 10)')">Contact</button>
-
-
-</header>
-
 <body>
-    <div id='Home' class="tabcontent">
-        <p>Home page content here</p>
-        <br><br><br><br><br><br><br><br><br><br><br><br>
-        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-        <br><br><br><br><br><br>
-
+    <div class="tablink">
+        <a href="index.html"><img src="logo_t&e.png" alt="logo" width="60" height="60"></a>
+        <a href="index.html"><img src="title.png" alt="title" width="140" height="60"></a>
+        <form class="search" action="/action_page.php" style="margin:auto;max-width:300px">
+            <br>
+            <input type="text" placeholder="Search..." name="search">
+            <button type="submit"><i class="fa fa-search"></i></button>
+          </form>
+        <div class="tablink-right">
+            <a href="index.html" id="#Home">Home</a>
+            <a href="travel.html">Travel & Food</a>
+            <a href="contact.html">Contact</a>
+        </div>
     </div>
-
-    <section>
-        <div id="Travel" class="tabcontent">
-            <p>Travel Page content here</p>
-            <br><br><br><br><br><br><br><br><br><br><br><br>
-            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-            <br><br><br><br><br><br>
-
-    </section>
-
-    <section>
-        <div id="Food" class="tabcontent">
-            <p>Food Page content here</p>
-            <br><br><br><br><br><br><br><br><br><br><br><br>
-            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-            <br><br><br><br><br><br>
-
-    </section>
-
-    <section>
-        <div id="Contact" class="tabcontent">
-            <p>Contact Page content here</p>
-            <br><br><br><br><br><br><br><br><br><br><br><br>
-            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-            <br><br><br><br><br><br>
-
-    </section>
 
 
 
 <div class="footer">
-    <p>Treat&Eat</p>
+    <p>Trip&Eat</p>
+  </div>
+
+<div class="News">
+  <table>
+    <tr>
+    <img src="news.png" alt="news" width="300" height="200">
+    </tr>
+    <tr>
+      <h2>Top Beaches in Australia</h2>
+    </tr>
+  </table>
 </div>
 
 </body>
-
-<script>
-    function openPage(pageName,elmnt,color) {
-      var i, tabcontent, tablinks;
-      tabcontent = document.getElementsByClassName("tabcontent");
-      for (i = 0; i < tabcontent.length; i++) {
-        tabcontent[i].style.display = "none";
-      }
-      tablinks = document.getElementsByClassName("tablink");
-      for (i = 0; i < tablinks.length; i++) {
-        tablinks[i].style.backgroundColor = "";
-      }
-      document.getElementById(pageName).style.display = "block";
-      elmnt.style.backgroundColor = color;
-    }
-    document.getElementById("defaultOpen").click();
-    </script>
-
-
 </html>
