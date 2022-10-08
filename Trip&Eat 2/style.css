@@ -110,16 +110,29 @@
      font-family: 'PT Sans Caption', sans-serif;
   }
   
+  .footer a, .footer a:active, .footer a:hover, .footer a:visited{
+    color: white;
+  }
+  
   .News{
     width: 500px;
     padding: 10px;
     border: 5px solid #556B2F;
-    margin: 0;
     object-fit: contain;
     display: block;
     background-color: #556B2F; 
     color: white;
-    float: left;
+    float: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: 10px;
+    margin-left: -250px;
+    text-align: left;
+  }
+
+  .News a, .News a:active, .News a:hover, .News a:visited{
+    color: white
   }
   
   p{
@@ -133,8 +146,8 @@
     float: left;
     font-display: left;
     position: relative;
-    bottom: 250px;
-    right: 100px;
+    bottom: 100px;
+    right: 55px;
     text-align: left;
     padding-top: 10px;
     padding-right: 10px;
@@ -143,7 +156,7 @@
     cursor: pointer;
   }
 
-  .traveltable a, .traveltable a:hover, .traveltable a:visited, .traveltable a:active {
+  .travelbox a, .travelbox a:hover, .travelbox a:visited, .travelbox a:active {
     color: white;
 
   }
@@ -154,14 +167,23 @@
     border-collapse: separate;
     border-spacing: 20px 0;
     }
-  
-
 
   h2{
-      font-size: 24px;
+      font-size: 15px;
     }
 
   p{
-      font-size: 16px;
+      font-size: 12px;
     }
     
+  .travelbox button{
+    background: #2F4B33;
+    color: white;
+    border: white;
+  }
+    
+  .travelvideo{
+    width: 400 ;
+    height: 500;
+    float: center;
+  }
