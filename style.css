@@ -1,0 +1,194 @@
+.tablink-right {
+    float: right;
+    color: #F5D9DE;
+  }
+  
+  .tablink {
+    overflow: hidden;
+    background-color: #2F4B33;
+    font-family: 'PT Sans Caption', sans-serif;
+    float: none;
+    border: none;
+    display: block;
+    outline: none;
+    cursor: pointer;
+    font-size: 17px;
+    font: bolder;
+    color: #F5D9DE;
+  }
+  
+  .tablink a {
+    float: left;
+    color: #f2f2f2;
+    padding: 10px 10px;
+    text-decoration: none;
+    font-size: 17px;
+    color: #F5D9DE;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  form.search input[type=text] {
+    padding: 10px;
+    font-size: 17px;
+    border: 1px solid grey;
+    float: left;
+    width: 80%;
+    background: #f1f1f1;
+    font-size: 'PT Sans Caption', sans-serif;
+  }
+  
+  form.search button {
+    float: left;
+    width: 20%;
+    padding: 10px;
+    background: #2F4B33;
+    color: white;
+    font-size: 17px;
+    border: 1px solid grey;
+    border-left: none;
+    cursor: pointer;
+  }
+  
+  form.search button:hover {
+    background: green;
+  }
+  
+  form.search::after {
+    content: "";
+    clear: none;
+    display: table;
+  }
+  
+  body {
+    margin: 0;
+    font-family: 'PT Sans Caption', sans-serif;
+    background-color: #E7E9E5;
+  }
+  
+  .footer {
+     position: fixed;
+     left: 0;
+     bottom: 0;
+     width: 100%;
+     background-color:#2F4B33;
+     color: white;
+     text-align: center;
+     font-family: 'PT Sans Caption', sans-serif;
+  }
+  
+  
+  h1{
+    text-align: center;
+    font-family: 'PT Sans Caption', sans-serif;
+  }
+  
+  .center{
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .homepagebg{
+    margin: 0;
+    font-family: 'PT Sans Caption', sans-serif;
+    background-image: url(images/homepage.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .footer {
+     position: fixed;
+     left: 0;
+     bottom: 0;
+     width: 100%;
+     background-color:#2F4B33;
+     color: white;
+     text-align: center;
+     font-family: 'PT Sans Caption', sans-serif;
+  }
+  
+  .footer a, .footer a:active, .footer a:hover, .footer a:visited{
+    color: white;
+  }
+  
+  .News{
+    width: 500px;
+    padding: 10px;
+    border: 5px solid #556B2F;
+    object-fit: contain;
+    display: block;
+    background-color: #556B2F; 
+    color: white;
+    float: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: 10px;
+    margin-left: -250px;
+    text-align: left;
+  }
+
+  .News a, .News a:active, .News a:hover, .News a:visited{
+    color: white
+  }
+  
+  p{
+    font-family: 'PT Sans Caption', sans-serif;
+  }
+
+  .travelbox{
+    background-color: #2F4B33;
+    color: white;
+    font-family: 'PT Sans Caption', sans-serif;
+    float: left;
+    font-display: left;
+    position: relative;
+    bottom: 100px;
+    right: 55px;
+    text-align: left;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px; 
+    cursor: pointer;
+  }
+
+  .travelbox a, .travelbox a:hover, .travelbox a:visited, .travelbox a:active {
+    color: white;
+
+  }
+
+  .traveltable {
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse: separate;
+    border-spacing: 20px 0;
+    }
+
+  h2{
+      font-size: 15px;
+    }
+
+  p{
+      font-size: 12px;
+    }
+    
+  .travelbox button{
+    background: #2F4B33;
+    color: white;
+    border: white;
+  }
+    
+  .travelvideo {
+    display: block;
+    display: block;
+    margin: 0 auto;
+  }
+
+li{
+  text-align: left;
+  font-size: 30px;
+}
